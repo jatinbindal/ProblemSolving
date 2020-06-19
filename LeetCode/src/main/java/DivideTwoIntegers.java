@@ -1,6 +1,3 @@
-import sun.jvm.hotspot.ui.EditableAtEndDocument;
-
-import java.lang.reflect.InvocationTargetException;
 
 public class DivideTwoIntegers {
         public int divide(int dividend, int divisor) {

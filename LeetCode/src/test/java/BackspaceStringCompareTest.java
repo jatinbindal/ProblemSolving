@@ -10,4 +10,7 @@ public class BackspaceStringCompareTest {
 
     }
 
+    private void assertEquals(boolean backspaceCompare, boolean b) {
+    }
+
 }
