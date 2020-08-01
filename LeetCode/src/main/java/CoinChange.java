@@ -14,7 +14,6 @@ public class CoinChange {
                     dp[i] = Math.min(dp[i],dp[i-coins[j]]+1);
                 }
             }
-
             return dp[amount]>amount?-1:dp[amount];
         }
 
