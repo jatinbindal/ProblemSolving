@@ -1,4 +1,13 @@
-class MyCalendar {
+public class MyCalendar {
+
+    class Node{
+        int start,end;
+        Node right, left;
+        Node(int s , int e){
+            start = s ; end = e;
+            right = null; left = null;
+        }
+    }
 
     Node root = null;
     
@@ -37,15 +46,7 @@ class MyCalendar {
         return false;
     }
 }
-class
-    Node{
-        int start,end;
-        Node right, left;
-        Node(int s , int e){
-            start = s ; end = e;
-            right = null; left = null;
-        }
-    }
+
 
 /**
  * Your MyCalendar object will be instantiated and called as such:
