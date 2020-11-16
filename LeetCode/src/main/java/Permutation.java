@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//general approach to baktracking
 public class Permutation {
 
     public List<List<Integer>> permute(int[] nums) {
