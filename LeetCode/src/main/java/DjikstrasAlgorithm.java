@@ -37,6 +37,7 @@ public class DjikstrasAlgorithm {
 
     static void djikstra(int s, ArrayList<ArrayList<Node>> adj, int n){
         int[] dist = new int[n+1];
+        boolean[] visited = new boolean[n+1];
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[s] = 0;
         PriorityQueue<Node> pq = new PriorityQueue<Node>();
@@ -44,6 +45,8 @@ public class DjikstrasAlgorithm {
         while(pq.size() > 0){
             Node curr = pq.peek(); pq.remove();
             int currN = curr.val;
+            if(visited[currN]) continue;
+            visited[currN]= true;
             Iterator<Node> it = adj.get(currN).iterator();
             while(it.hasNext()){
                 Node temp = it.next();
