@@ -1,6 +1,7 @@
 import java.util.*;
 
 //equation given as a/b = 2 ; b/c = 5 .. etc... graph problem
+// note : division by zero is allowed for double
 public class EvaluateDivision {
 
         Map<String, Map<String,Double>> map =  new HashMap<>();

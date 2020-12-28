@@ -6,9 +6,9 @@ public class SearchInRotatedSortedArray2withDups {
             if(r<0) return false;
             while(l<nums.length-1 && nums[l] == nums[l+1])
                 l++;
-            while(r>l && nums[r] == nums[r-1])
+            while(r>=l && nums[r] == nums[r-1])
                 r--;
-            while(l<r) {
+            while(l<=r) {
                 int m = (l+r)/2;
                 if(nums[m] == target ) return true;
 
@@ -34,7 +34,6 @@ public class SearchInRotatedSortedArray2withDups {
 
             }
 
-            if(nums[l]==target) return true;
             return false;
         }
     }

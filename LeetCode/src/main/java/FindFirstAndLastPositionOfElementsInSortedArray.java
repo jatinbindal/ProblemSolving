@@ -1,6 +1,6 @@
 public class FindFirstAndLastPositionOfElementsInSortedArray {
     //binary search
-    //upper and lower bound, can e combined in one function but its cleaner this way
+    //upper bound  and lower bound, can be combined in one function but its cleaner this way
         public int[] searchRange(int[] nums, int target) {
 
             int[] res = {-1, -1};

@@ -1,4 +1,4 @@
-public class RemoveDuplicateFromSortedArray {
+public class    RemoveDuplicateFromSortedArray {
 
     //for 2 dup allowed make 1 = 2 below
     public int removeDuplicates(int[] nums) {
